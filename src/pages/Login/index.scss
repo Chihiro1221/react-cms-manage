@@ -1,0 +1,22 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login-form {
+    width: 400px;
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 4px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #eee;
+    }
+  }
+}
