@@ -1,0 +1,14 @@
+.loading-container {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}

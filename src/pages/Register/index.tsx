@@ -1,11 +1,11 @@
 import React from 'react';
-import {Button, Checkbox, Form, Input} from 'antd';
+import {Button, Checkbox, Form, Input, message} from 'antd';
 import {UserOutlined, LockOutlined} from '@ant-design/icons';
 import '../Login/index.scss'
 // @ts-ignore
 import logoImg from '../../assets/images/logo.jpeg'
 import {useNavigate} from "react-router-dom";
-import {register} from "../../apis/auth";
+import {register} from "../../apis/authApi";
 
 export const Register: React.FC = () => {
   const navigate = useNavigate()
@@ -15,7 +15,11 @@ export const Register: React.FC = () => {
   }
   const onFinish = async (values: any) => {
     const res = await register(values)
-    console.log(res)
+    if (res.errCode) {
+      return message.error(res.message)
+    }
+    message.success(res.message)
+    navigate('/auth/login')
   };
 
   return <div className="login-container">

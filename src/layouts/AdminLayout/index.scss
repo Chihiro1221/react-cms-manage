@@ -1,0 +1,59 @@
+.admin-layout {
+  min-height: 100vh;
+  .ant-layout-header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .user-info {
+      padding-right: 20px;
+      display: flex;
+      align-items: center;
+
+      .username {
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          color: #1890ff;
+        }
+
+        span {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .ant-layout-content {
+    margin-top: 0 !important;
+    background-color: #fff;
+  }
+  .admin-footer {
+    background-color: #041527;
+    width: 100%;
+    padding: 18px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+  }
+}
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
